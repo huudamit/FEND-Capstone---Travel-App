@@ -1,0 +1,45 @@
+{
+  "name": "travel-app",
+  "version": "1.0.0",
+  "description": "A travel app that fetches trip data from multiple APIs and displays weather information and images.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.dev.js --open",
+    "test": "jest",
+    "clean": "rm -rf dist"
+  },
+  "author": "DamNH",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.3.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "html-loader": "^5.1.0",
+    "node-fetch": "^2.6.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "sass": "^1.79.4",
+    "workbox-webpack-plugin": "^7.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "^1.4.1",
+    "sass-loader": "^11.0.1",
+    "source-map-loader": "^3.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
